@@ -19,7 +19,7 @@ def createMigrationFile(table, attributes):
     file.write("use Illuminate\Database\Schema\Blueprint;\n")
     file.write("use Illuminate\Database\Migrations\Migration;\n")
     file.write("\n")
-    camelTable = to_camelcase(i)
+    camelTable = to_camelcase(table)
     file.write("class Create" + camelTable + "Table extends Migration\n")
     file.write("{\n")
     file.write("public function up() {\n")
