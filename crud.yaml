@@ -1,0 +1,19 @@
+table:
+  event_types:
+    id:
+      - integer
+    name:
+      - string
+  events:
+    id:
+      - integer
+    event_type_id:
+      - integer
+    name:
+      - string
+    description:
+      - text
+    featured_image:
+      - string
+      - file
+    
